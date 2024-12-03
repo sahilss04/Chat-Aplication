@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 
 // Mongodb Connection 
-connectDB();
+connectDB(process.env.DB_URI);
 
 
 export default app;
